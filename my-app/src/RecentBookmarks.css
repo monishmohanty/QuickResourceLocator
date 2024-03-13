@@ -1,0 +1,51 @@
+.recent-bookmarks {
+  background-color: #f8f9fa; /* Light background for the component */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding around the content */
+  margin-bottom: 20px; /* Space below the component */
+}
+
+.recent-bookmarks h2 {
+  color: #0078D4; /* Color that matches the navbar */
+  margin-bottom: 15px; /* Space below the title */
+}
+
+.recent-bookmarks ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.recent-bookmarks .bookmark-item {
+  padding: 10px; /* Padding around each item */
+  border-bottom: 1px solid #ddd; /* Separator between items */
+}
+
+.recent-bookmarks .bookmark-name {
+  font-weight: bold; /* Make the bookmark name bold */
+}
+
+.recent-bookmarks .bookmark-category {
+  font-size: 0.8em; /* Smaller font size for the category */
+  color: #666; /* Lighter color for the category */
+}
+
+.recent-bookmarks .no-bookmarks {
+  text-align: center; /* Center if no bookmarks */
+}
+/* Add your existing styles here */
+
+/* Style for the button */
+.browse-button {
+  background-color: #007bff; /* Bootstrap primary color for example */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.browse-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}

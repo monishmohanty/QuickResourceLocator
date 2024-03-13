@@ -1,0 +1,57 @@
+.navbar {
+  background-color: #0078D4; /* Example background color */
+  display: flex;
+  flex-direction: column; /* Stack logo and menu vertically */
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+.nav-links li {
+  padding: 0.5em; /* Add some space around each link */
+}
+.search-container {
+  margin-left: auto; /* This pushes the search container to the right */
+}
+.nav-links a {
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Sets text color */
+}
+.nav-logo {
+  font-size: 24px; /* Large font size for the logo */
+  margin-bottom: 10px; /* Space between logo and nav items */
+}
+body, .app {
+  background-color: white; /* White background */
+}
+
+/* Rest of your styles */
+
+.nav-menu {
+  display: flex;
+  justify-content: center; /* Center nav items horizontally */
+  width: 100%; /* Take the full width */
+}
+
+.nav-item {
+  padding: 10px 15px; /* Spacing inside each nav item */
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Text color for nav items */
+  margin: 0 5px; /* Space between nav items */
+  border: 1px solid white; /* Border around nav items */
+  border-radius: 4px; /* Rounded corners for nav items */
+}
+
+.nav-item:hover {
+  background-color: #286090; /* Darker background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column; /* Stack nav items vertically on smaller screens */
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Space between nav items when stacked */
+  }
+}

@@ -1,0 +1,30 @@
+.most-viewed {
+  background-color: #f8f9fa; /* Light background for the component */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding around the content */
+  margin-bottom: 20px; /* Space below the component */
+}
+
+.most-viewed h2 {
+  color: #0078D4; /* Color that matches the navbar */
+  margin-bottom: 15px; /* Space below the title */
+}
+
+.most-viewed ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.most-viewed .item {
+  padding: 10px; /* Padding around each item */
+  border-bottom: 1px solid #ddd; /* Separator between items */
+}
+
+.most-viewed .item-name {
+  font-weight: bold; /* Make the item name bold */
+}
+
+.most-viewed .item-category {
+  font-size: 0.8em; /* Smaller font size for the category */
+  color: #666; /* Lighter color for the category */
+}

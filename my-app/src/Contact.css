@@ -1,0 +1,65 @@
+.contact-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dell-support-button {
+  background-color: #0078D4; /* Dell blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.support-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.support-card {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-button,
+.email-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #0056A8; /* A darker Dell blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.phone-button:hover,
+.email-button:hover {
+  background-color: #003D72; /* Even darker Dell blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .support-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .support-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

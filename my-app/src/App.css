@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #007bff; /* Example color */
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+body, .app {
+  background-color: white; /* White background */
+}
+
+/* Rest of your styles */
+
+.navbar a:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Other styles for App */

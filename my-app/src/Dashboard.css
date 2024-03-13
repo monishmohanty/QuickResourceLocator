@@ -1,0 +1,103 @@
+/* Dashboard.css */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between; /* Space out the containers evenly */
+  align-items: flex-start; /* Align items to the start */
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.content-section, .statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between content */
+  flex: 1; /* Flex shorthand for flex-grow, flex-shrink and flex-basis */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%; /* Ensure that the containers take up the full height */
+}
+
+.statistics {
+  font-size: 1.2rem; /* Increase font size */
+}
+
+@media (max-width: 1024px) {
+  .dashboard-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-section, .statistics {
+    width: 100%;
+    margin: 10px 0;
+    height: auto; /* Height should be auto on smaller screens for a better layout */
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-section, .statistics {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.content-section::after, .statistics::after {
+  content: '';
+  display: block;
+  margin-top: auto;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around; /* Space out items evenly */
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  flex-basis: calc(33.333% - 20px); /* Adjust the width of each section */
+}
+
+.product-thumbnail {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain; /* Ensure the images maintain their aspect ratio */
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will distribute the space evenly */
+  flex-grow: 1; /* This will make the container grow to match siblings' height */
+  padding: 20px;
+  background-color: #fff; /* Assuming other containers are white */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px; /* Optional: if you want some spacing around the container */
+}
+
+.stat-item {
+  background: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center; /* Center the text if that's your design */
+  /* Ensure the last item has no margin-bottom */
+  margin-bottom: 0;
+  font-size: 1.2rem; /* Increase the font size */
+  font-weight: bold; /* Optional: if you want the text to be bold */
+}
+
+/* Ensure the last stat item doesn't have a bottom margin */
+.stat-item:last-child {
+  margin-bottom: 0;
+}
